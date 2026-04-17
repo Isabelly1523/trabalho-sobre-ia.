@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você precisa criar uma apresentação para a feira de ciências da escola. Um colega sugere usar uma ferramenta de IA que cria slides automaticamente a partir de um tema. O que você pensa?",
+        enunciado: "Isabelly Rosa de Arruda, você está navegando na internet para pesquisar um trabalho escolar. Um anúncio oferece 'respostas prontas e rápidas' para todas as suas dúvidas usando IA. O que você pensa?",
         alternativas: [
             {
-                texto: "Ótima ideia! Vou usar a IA para ganhar tempo e focar no conteúdo.",
-                afirmacao: "Você aprendeu a usar IA como aliada para otimizar seu tempo e melhorar suas apresentações. "
+                texto: "Parece útil! Vou usar a IA para me ajudar a encontrar informações mais rápido.",
+                afirmacao: "Você aprendeu a usar a IA como uma ferramenta de busca inteligente, otimizando seu tempo na internet. "
             },
             {
-                texto: "Prefiro fazer meus slides manualmente, sem ajuda de máquinas.",
-                afirmacao: "Você decidiu manter o controle total sobre o design e conteúdo, mas demorou mais para finalizar o trabalho."
+                texto: "Prefiro pesquisar em sites confiáveis e livros, sem depender de IA.",
+                afirmacao: "Você decidiu confiar apenas em fontes tradicionais, mas pode demorar mais para encontrar o que precisa."
             }
         ]
     },
     {
-        enunciado: "A IA gerou os slides, mas as imagens e cores não combinam com o seu estilo. O que você faz?",
+        enunciado: "Isabelly, a IA sugeriu algumas informações, mas você desconfia que podem não ser verdadeiras. O que você faz?",
         alternativas: [
             {
-                texto: "Peço para a IA ajustar o design até ficar do meu agrado.",
-                afirmacao: "Você aprendeu a refinar comandos para a IA (prompts) e conseguiu um resultado personalizado."
+                texto: "Verifico as informações em outros sites confiáveis antes de usar.",
+                afirmacao: "Você aprendeu a importância do senso crítico e de verificar fontes na internet."
             },
             {
-                texto: "Edito manualmente cada slide no PowerPoint/Canva.",
-                afirmacao: "Você desenvolveu habilidades de design manual, mas perdeu um pouco da agilidade que a IA poderia dar."
+                texto: "Confio na IA e uso as informações sem questionar.",
+                afirmacao: "Você percebeu que a IA pode errar ou gerar informações falsas (alucinações) e precisa ter cuidado."
             }
         ]
     },
     {
-        enunciado: "Durante a apresentação, um professor pergunta como a IA ajudou na criação dos slides. Como você responde?",
+        enunciado: "Seu professor pede para citar as fontes da sua pesquisa na internet. Como a IA pode te ajudar?",
         alternativas: [
             {
-                texto: "A IA foi uma ferramenta, mas eu escolhi as informações, organizei as ideias e revisei tudo.",
-                afirmacao: "Você entende que a IA é uma assistente, mas o protagonismo e a autoria são humanos."
+                texto: "Peço para a IA me ajudar a organizar as referências dos sites que usei.",
+                afirmacao: "Você entende que a IA pode auxiliar na formatação, mas as fontes originais são sua responsabilidade."
             },
             {
-                texto: "Falo que a IA fez praticamente tudo, pois foi mais fácil.",
-                afirmacao: "Você percebeu que dependência total da IA pode tirar sua criatividade e aprendizado."
+                texto: "Peço para a IA inventar fontes para mim, para ser mais rápido.",
+                afirmacao: "Você aprendeu que inventar fontes é plágio e antiético, mesmo com ajuda da IA."
             }
         ]
     },
     {
-        enunciado: "Sua amora pede ajuda para criar uma apresentação impactante. Você sugere usar IA?",
+        enunciado: "Sua amiga pede ajuda para pesquisar na internet sobre fake news. Isabelly, o que você sugere?",
         alternativas: [
             {
-                texto: "Sim! Ensino ela a usar prompts criativos e revisar o conteúdo gerado.",
-                afirmacao: "Você se tornou uma referência em usar IA de forma ética e criativa na escola."
+                texto: "Ensino ela a usar a IA para encontrar artigos confiáveis, mas sempre verificando as fontes.",
+                afirmacao: "Você se tornou uma referência em letramento digital e uso ético da IA na escola."
             },
             {
-                texto: "Não, acho que ela precisa aprender a fazer tudo sozinha primeiro.",
-                afirmacao: "Você prefere métodos tradicionais, mas percebe que isso pode limitar o potencial dos colegas."
+                texto: "Falo para ela não confiar em IA e pesquisar só em livros.",
+                afirmacao: "Você prefere métodos tradicionais, mas percebe que isso pode limitar o acesso à informação atualizada."
             }
         ]
     },
     {
-        enunciado: "No final do ano, a escola premia a melhor apresentação com ajuda de IA. Você decide:",
+        enunciado: "No final do ano, a escola premia o melhor trabalho sobre 'Segurança na Internet'. Isabelly decide:",
         alternativas: [
             {
-                texto: "Participar usando IA como apoio, mas destacando sua autoria e criatividade.",
-                afirmacao: "Você aprendeu o equilíbrio perfeito: IA acelera, mas é você quem dá alma à apresentação."
+                texto: "Usar IA para pesquisar dados e estatísticas, mas escrever tudo com suas próprias palavras.",
+                afirmacao: "Você aprendeu o equilíbrio perfeito: a IA acelera a pesquisa, mas seu conhecimento dá valor ao trabalho."
             },
             {
-                texto: "Não participar, pois acredita que IA tira o mérito humano.",
-                afirmacao: "Você ficou de fora de uma grande oportunidade por resistir às novas tecnologias."
+                texto: "Não usar IA para nada, pois acredita que pesquisar na internet com IA não é 'pesquisa de verdade'.",
+                afirmacao: "Você ficou de fora de uma grande oportunidade por resistir às ferramentas modernas de pesquisa."
             }
         ]
     }
@@ -104,14 +104,14 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Sua jornada com autorIA em mídias digitais...";
+    caixaPerguntas.textContent = "Isabelly Rosa de Arruda, sua jornada com IA na internet...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
 
 mostraPergunta();
 
-// Relógio (mantido do original)
+// Relógio (corrigido com intervalo de 1 segundo)
 const horas = document.getElementById('horas');
 const minutos = document.getElementById('minutos');
 const segundos = document.getElementById('segundos');
@@ -129,4 +129,4 @@ const relogio = setInterval(function time() {
     horas.textContent = hr;
     minutos.textContent = min;
     segundos.textContent = s;
-});
+}, 1000);
